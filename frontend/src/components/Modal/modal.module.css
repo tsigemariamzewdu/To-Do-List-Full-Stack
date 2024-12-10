@@ -43,12 +43,12 @@
   }
   
   .modalButtonSave {
-    background-color: #4caf50; /* Green for the save button */
+    background-color: #36e83c; /* Green for the save button */
     color: white;
   }
   
   .modalButtonCancel {
-    background-color: #f44336; /* Red for the cancel button */
+    background-color: #e62d20; /* Red for the cancel button */
     color: white;
   }
   

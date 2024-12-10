@@ -1,0 +1,51 @@
+/* Overall container */
+.classifiedcontainer {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Section styling */
+.tasks-section {
+    margin-bottom: 20px;
+}
+
+/* Section title */
+.sectiontitle {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #333;
+    text-transform: uppercase;
+    border-bottom: 2px solid #4caf50;
+    display: inline-block;
+}
+
+/* Tasks list */
+.taskslist {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Task item */
+.taskitem {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #555;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Empty state messages */
+.notasks, .loading-message, .no-tasks-message {
+    font-size: 1rem;
+    color: #888;
+    text-align: center;
+    margin: 10px 0;
+}

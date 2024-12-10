@@ -1,0 +1,91 @@
+body {
+    background-color: #b8e6fd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ensure the body takes the full height of the viewport */
+    margin: 0; /* Remove default margin */
+}
+
+.container {
+    width: 60vw;
+    height: 60vh;
+    border-radius: 36px;
+    background-color: rgb(61, 58, 58);
+    color: white;
+    
+}
+.p{
+    text-transform: capitalize;
+text-align: center;
+padding-top: 40px;
+font-size: 24px;
+    
+
+}
+.somenote{
+    text-align: center;
+    text-transform: capitalize;
+}
+form{
+    
+    align-items: center;
+    justify-content: center;
+}
+
+label{
+   margin-left: 30px;
+    width: 20%;
+
+}
+.sumbit{
+    margin-top: 70px;
+    width: 30%;
+    margin-left: 35%;
+    height: 40px;
+    border-radius: 32px;
+    background-color: rgb(38, 136, 201);
+    color: white;
+    text-transform: capitalize;
+    font-size: 16px;
+    border-color: transparent;
+}
+.sumbit:hover{
+    background-color: aqua;
+    color: black;
+}
+.thelink{
+    text-decoration: underline;
+    color: rgb(98, 157, 194);
+}
+.thelink:hover{
+    color: aqua;
+}
+.inputs {
+    display: flex; /* Use flexbox to align child elements */
+    flex-direction: column; /* Arrange input fields in a column */
+    align-items: center; /* Center the input fields */
+    gap: 16px; /* Add space between input fields */
+    width: 100%; /* Ensures consistency across the parent width */
+}
+
+.inputs input {
+    width: 60%; /* Uniform width for all inputs */
+    height: 40px; /* Uniform height */
+    border-radius: 20px;
+    padding: 8px;
+    box-sizing: border-box;
+    border-color: transparent; /* Ensures padding doesn't affect width */
+}
+
+@media(min-width:1025px){
+    .container {
+        width: 40vw;
+        height: 60vh;
+        border-radius: 36px;
+        background-color: rgb(61, 58, 58);
+        color: white;
+        
+        
+    }  
+}

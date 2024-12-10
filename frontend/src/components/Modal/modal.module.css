@@ -1,0 +1,66 @@
+.modalContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f0f8ff; /* Light blue background */
+     /* Slightly darker blue border */
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(196, 228, 237, 0.1);
+    padding: 20px;
+    width: 500px;
+    text-align: center;
+    z-index: 1000;
+  }
+  
+  .modalTitle {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: black; /* Darker text color */
+  }
+  
+  .modalInput {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: "Parkinsans", sans-serif;
+  }
+  
+  .modalButton {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .modalButton:hover {
+    opacity: 0.9;
+  }
+  
+  .modalButtonSave {
+    background-color: #4caf50; /* Green for the save button */
+    color: white;
+  }
+  
+  .modalButtonCancel {
+    background-color: #f44336; /* Red for the cancel button */
+    color: white;
+  }
+  
+  /* For modal background overlay */
+  .modalContainer::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white; /* Dark overlay effect */
+    z-index: -1;
+  }
+  

@@ -1,0 +1,80 @@
+.title{
+    text-align: center;
+    margin: 20px;
+}
+.container{
+    width: 60vw;
+    height: 100vh;
+    background-color:  #2b2b2b;;
+    color: white;
+    border-radius: 20px;
+    
+}
+.container h2{
+    font-size: 24px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    margin-top: 30px;
+    padding: 20px;
+}
+.plus {
+    position: fixed;
+    top: 80%; /* Align vertically */
+    right: 50%; /* Align horizontally */
+    transform: translate(50%, 50%); /* Adjust position to truly center */
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    font-size: 32px;
+    background-color: lightblue;
+    border: none; /* Remove border color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for effect */
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.plus:hover {
+    background-color: #87ceeb; /* Slightly darker light blue on hover */
+    transform: translate(50%, 50%) scale(1.1); /* Scale on hover */
+}
+.status{
+            margin-top: 70px;
+            width: 20%;
+            margin-left: 40%;
+            height: 60px;
+            background-color: rgb(38, 136, 201);
+            border-color: transparent;
+            padding: 20px 25px;
+            border-radius: 20px;
+            color: white;
+            text-transform: capitalize;
+            font-size: 16px;
+            border-color: transparent
+}
+.logout{
+    position: absolute;
+    top: 100px;
+    right: 30%;
+    height: 60px;
+    background-color: rgb(38, 136, 201);
+    border-color: transparent;
+    padding: 20px 25px;
+    border-radius: 20px;
+    color: white;
+    text-transform: capitalize;
+    font-size: 16px;
+    border-color: transparent;
+
+}
+.logout:hover{
+    color:black;
+    background-color: aqua;
+}
+.status:hover{
+    color:black;
+    background-color: aqua;
+}

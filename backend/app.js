@@ -3,10 +3,12 @@ const mongoose=require("mongoose")
 const cors= require("cors")
 
 const todoRoutes=require("./routes/todoRoutes");
-const userRoutes=require("./routes/userRoutes")
+const userRoutes=require("./routes/userRoutes");
+require("dotenv").config();
+
 
 const app=express()
-const PORT=3000;
+const PORT=process.env.PORT;
 
 //cors middleware
 app.use(cors())
@@ -17,15 +19,17 @@ app.use(express.json())
 
 
 //mongoose connection
-mongoose.connect("mongodb://localhost:27017/mvcexample",{
-   
-   
-}
 
-).then(()=>
+mongoose.connect(process.env.DB_CONNECTION, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+})
+
+
+.then(()=>
 console.log("mongoDB connected"))
 .catch((error)=>{
-    console.error("mongodb connection failed")
+    console.error("mongodb connection failed",error)
 })
 
 

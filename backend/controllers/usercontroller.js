@@ -20,7 +20,7 @@ exports.register=async (req,res)=>{
         await user.save();
         
 
-        const token=jwt.sign({id:user._id},"your_jwt_secret",{expiresIn:"1h"})
+        const token=jwt.sign({id:user._id},process.env.SECRET_KEY,{expiresIn:"1h"})
         res.status(201).json({token,msg:"user registerd successfully"})
     }catch(error){
         res.status(500).json({error:"user registration failed"})
@@ -45,7 +45,7 @@ exports.login=async(req,res)=>{
         }
 
         //generate a jwt token
-        const token=jwt.sign({id:user._id},"your_jwt_secret",{expiresIn:"24h"});
+        const token=jwt.sign({id:user._id},process.env.SECRET_KEY,{expiresIn:"24h"});
         res.status(200).json({message:"login succesfull",token})
             }catch(error){
 
